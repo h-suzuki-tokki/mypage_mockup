@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Webのタイトル名</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/nav.css">
+    </head>
+    <body>
+        <header>
+            <!-- <img src="image/mypage-header.jpg" alt="トップイメージ"> -->
+            <img src="image/oshare-bgimage.jpg" alt="トップイメージ">
+            <div class="top-title">
+                bell offical site
+            </div>
+            <div class="profile-icon">
+                <!-- <img src="image/mypage-icon.jpg" alt="アイコン"> -->
+                <img src="image/oshare-bgimage.jpg" alt="アイコン">
+            </div>    
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- メニューボタン -->
+        <div class="menubutton" onclick="toggleMenu()">
+            <i></i><i></i><i></i>
+        </div>
+
+        <!-- スライドメニュー -->
+        <div class="inmenu">
+            <ul>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="portfolio">
+                <h1>Portfolio</h1>
+                <h2>楽しい音楽を♪</h2>
+                <a href="songs.html" class="cta">楽曲一覧はこちら</a>
+            </section>
+
+            <section class="latest">
+                <h2>最新リリース</h2>
+                <div class="song-card">
+                    <!-- <img src="image/latest-song.jpg" alt="最新曲ジャケット"> -->
+                    <img src="image/oshare-bgimage.jpg" alt="最新曲ジャケット">
+                    <div>
+                        <h3>楽曲説明</h3>
+                        <p>詳細説明</p>
+                        <a href="https://new-song-url.com" target="_blank">▶ 視聴する</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <aside>
+            <h2>更新履歴</h2>
+            <div class="news">
+                <div class="topic"><div class="time">2025/08/19</div><div>最新曲「○○」公開</div></div>
+                <div class="topic"><div class="time">2025/08/10</div><div>歌詞ページに「○○」追加</div></div>
+                <div class="topic"><div class="time">2025/07/30</div><div>STEMデータ配布開始</div></div>
+            </div>
+        </aside>
+
+        <footer>
+            &copy; 2025 bell
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('.menubutton').classList.toggle('open');
+                document.querySelector('.inmenu').classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
