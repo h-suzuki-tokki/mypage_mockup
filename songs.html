@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Webのタイトル名</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/songs.css">
+    </head>
+    <body>
+        <header>
+            <!-- <img src="image/mypage-header.jpg" alt="トップイメージ"> -->
+            <img src="image/oshare-bgimage.jpg" alt="トップイメージ">
+            <div class="top-title">
+                bell offical site
+            </div>
+            <div class="profile-icon">
+                <!-- <img src="image/mypage-icon.jpg" alt="アイコン"> -->
+                <img src="image/oshare-bgimage.jpg" alt="アイコン">
+            </div>    
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- メニューボタン -->
+        <div class="menubutton" onclick="toggleMenu()">
+            <i></i><i></i><i></i>
+        </div>
+
+        <!-- スライドメニュー -->
+        <div class="inmenu">
+            <ul>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section class="song-list">
+                <h2>楽曲一覧</h2>
+
+                <div class="song-card">
+                    <img src="image/oshare-bgimage.jpg" alt="曲1">
+                    <div>
+                        <h3>タイトル</h3>
+                        <p>説明</p>
+                        <a href="https://example.com/song1" target="_blank">▶ 視聴する</a>
+                    </div>
+                </div>
+
+                <div class="song-card">
+                    <img src="image/oshare-bgimage.jpg" alt="曲2">
+                    <div>
+                        <h3>タイトル</h3>
+                        <p>説明</p>
+                        <a href="https://example.com/song2" target="_blank">▶ 視聴する</a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 bell
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('.menubutton').classList.toggle('open');
+                document.querySelector('.inmenu').classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>
