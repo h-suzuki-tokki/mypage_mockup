@@ -6,10 +6,13 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50px);
-    width: 400px;
-    height: 300px;
+    width: 80vw; /*400pxから変更*/
+    max-width: 400px; /*追加*/
+    height: auto; /*300pxから変更*/
+    padding: 20px; /*追加*/
     background: rgba(255,255,255,.5);
-    font-size: 50px;
+    font-size: 5vw; /*50pxから変更*/
+    white-space: nowrap; /*追加*/
 }
 /* メディアクエリ */
 @media (max-width: 1024px) {
