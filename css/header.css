@@ -1,0 +1,37 @@
+.social-icons{
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.social-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    margin: 0 1px;
+    transition: color .2s ease, transform .2s ease;
+    padding: 0;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+    position: relative;
+    text-decoration: none;
+}
+.social-icons a:hover{
+    transform: scale(1.2);
+}
+.social-icons a.youtube:hover{
+    color: #ff0000;
+}
+.social-icons a.twitter:hover{
+    color: #0090ff;
+}
+.social-icons a.nico:hover{
+    color: #f0f045;
+}

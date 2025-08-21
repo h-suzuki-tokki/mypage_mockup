@@ -117,9 +117,11 @@ nav.open { display: block; }
   margin-left: -20px;
   opacity: 0;
   transition: all .5s ease;
+  background-color: transparent;
 }
 .inmenu li:hover{
     background: white;
+    transition: background-color .3s ease;
 }
 .inmenu.open {
   left: 0;

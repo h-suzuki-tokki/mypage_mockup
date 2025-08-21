@@ -79,6 +79,10 @@
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
+.portfolio h2{
+    color: white;
+    text-align: center;
+}
 .cta{
     display: inline-block;
     margin-top: 20px;
