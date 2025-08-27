@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>nav&menu</title>        
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <head></head>
+        <nav>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- メニューボタン -->
+        <div class="menubutton" onclick="toggleMenu()">
+            <i></i><i></i><i></i>
+        </div>
+
+        <!-- スライドメニュー -->
+        <div class="inmenu">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+        <script>
+            function toggleMenu() {
+                document.querySelector('.menubutton').classList.toggle('open');
+                document.querySelector('.inmenu').classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>

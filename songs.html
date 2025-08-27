@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>楽曲一覧</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/songs.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- アイコン用 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <!-- <img src="image/oshare-bgimage.jpg" alt="トップイメージ"> -->
+            <img src="image/atarayo.jpg" alt="トップイメージ">
+            <div class="top-title">
+                bell offical site
+            </div>
+            <div class="profile-icon">
+                <!-- <img src="image/mypage-icon.jpg" alt="アイコン"> -->
+                <img src="image/icon.jpg" alt="アイコン">
+            </div>
+            
+            <div class="social-icons">
+                <a class="youtube" href="https://www.youtube.com/@bell.8810" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="twitter" href="https://twitter.com/8810bell" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="nico" href="https://www.nicovideo.jp/user/129301171?rf=nvpc&rp=watch&ra=video_information" target="_blank"><img src="image/202302_niconicosymbol.png" alt="ニコニコアイコン" class="tv-icon"></a>
+            </div>
+            <ol class="breadlist">
+                <li><a href="index.html">TOP</a></li>
+                <li class="current">楽曲一覧</li>
+            </ol>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- メニューボタン -->
+        <div class="menubutton" onclick="toggleMenu()">
+            <i></i><i></i><i></i>
+        </div>
+
+        <!-- スライドメニュー -->
+        <div class="inmenu">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="songs.html">SONG LIST</a></li>
+                <li><a href="links.html">LINKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <main>
+
+            <section class="song-list">
+                <h2>楽曲一覧</h2>
+
+                <div class="song-card">
+                    <img src="image/mikuwaltz.jpg" alt="曲1">
+                    <div>
+                        <h3>miku waltz</h3>
+                        <p>vocal: 初音ミク</p>
+                        <p>illustration: GOMA</p>
+                        <a class="mikuwaltz" href="https://www.youtube.com/watch?v=FWFcCRFNunE" target="_blank">▶ 視聴する</a>
+                    </div>
+                </div>
+
+                <div class="song-card">
+                    <img src="image/oshare-bgimage.jpg" alt="曲2">
+                    <div>
+                        <h3>最強シンガー</h3>
+                        <p>vocal: 初音ミク</p>
+                        <p>illustration: つちのこさん</p>
+                        <a class="saikyouY" href="https://www.youtube.com/watch?v=3CQx9T2kzSs" target="_blank">▶ 視聴する</a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 bell All rights reserved.
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('.menubutton').classList.toggle('open');
+                document.querySelector('.inmenu').classList.toggle('open');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+
+.breadlist {
+    display: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: dashed 2px #01558d;
+    font-size: 20px;
+}
+.breadlist li {
+    padding: 0;
+}
+.breadlist li::after {
+    content: '>';
+    margin: 0 5px;
+}
+.breadlist li:last-child::after {
+    display: none;
+}
+.breadlist li.current {
+    font-weight: bold;
+    color: #01558d;
+    text-decoration: underline;
+}
